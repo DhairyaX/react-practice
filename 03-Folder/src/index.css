@@ -12,8 +12,17 @@ body{
   background-color: rgb(14, 13, 13);
 }
 
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  /* Cards will wrap to next line if no space */
+  gap: 20px;  /* Spacing between cards */
+  padding: 20px;
+
+}
 .mainbox {
-  background-image: url('https://imgs.search.brave.com/emJXVaIrx2WpA31aXDcpNHayYcJpvbUPQUiPeX5b0MY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI1LzA0L2pvaG4t/d2ljay01LmpwZz9x/PTQ5JmZpdD1jcm9w/Jnc9MjIwJmg9MTgy/JmRwcj0y');
+  background-image: url({props.backgroundImage});
   height: 300px;
   width: 250px;
   display: flex;
